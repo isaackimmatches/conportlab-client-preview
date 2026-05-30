@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="컨포트랩 제조 운영관리 AX 솔루션">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071013"/>
+      <stop offset=".62" stop-color="#0c1f25"/>
+      <stop offset="1" stop-color="#132b2d"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#13bfe4"/>
+      <stop offset="1" stop-color="#a8dd35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <path d="M0 890c192-65 355-70 489-15 146 60 274 49 421-37 100-58 196-78 290-60v422H0Z" fill="#0d363b" opacity=".58"/>
+  <g opacity=".16" stroke="#13bfe4" stroke-width="1">
+    <path d="M80 0v1200M240 0v1200M400 0v1200M560 0v1200M720 0v1200M880 0v1200M1040 0v1200"/>
+    <path d="M0 300h1200M0 420h1200M0 540h1200M0 660h1200M0 780h1200M0 900h1200"/>
+  </g>
+  <g transform="translate(82 340)">
+    <rect width="132" height="132" rx="30" fill="#071013" stroke="url(#line)" stroke-width="10"/>
+    <path d="M31 66c0-31 21-53 52-53 19 0 35 8 45 22l-22 17c-6-9-13-13-23-13-15 0-26 11-26 27s11 27 26 27c10 0 17-4 23-13l22 17c-10 14-26 22-45 22-31 0-52-22-52-53Z" fill="#13bfe4"/>
+    <path d="M94 17h25v75H94V17Zm0 87h25v14H94v-14Z" fill="#a8dd35"/>
+  </g>
+  <text x="252" y="388" fill="#f7fbff" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif" font-size="54" font-weight="800">컨포트랩</text>
+  <text x="252" y="438" fill="#a8dd35" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="1">CONPORTLAB</text>
+  <text x="82" y="650" fill="#f7fbff" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif" font-size="56" font-weight="850">제조 운영관리 AX 솔루션</text>
+  <text x="84" y="722" fill="#cdd7dc" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif" font-size="30" font-weight="650">현장 데이터 연결부터 노코드 운영 화면, 제조 AI 분석까지 한 번에</text>
+  <rect x="82" y="805" width="436" height="56" rx="28" fill="#a8dd35"/>
+  <text x="113" y="843" fill="#071013" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif" font-size="24" font-weight="850">conportlab.com</text>
+</svg>

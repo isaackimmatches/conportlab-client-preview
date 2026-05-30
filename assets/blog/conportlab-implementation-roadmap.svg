@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 제조 데이터 플랫폼 구축 로드맵</title>
+  <desc id="desc">30일 안에 설비 데이터 수집, 운영 화면, AI 질문을 순차적으로 검증하는 로드맵</desc>
+  <rect width="1200" height="675" fill="#071013"/>
+  <circle cx="1060" cy="110" r="210" fill="#a7dc37" opacity=".16"/>
+  <circle cx="190" cy="590" r="240" fill="#00a7d8" opacity=".12"/>
+  <text x="72" y="88" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">30일 제조 데이터 플랫폼 PoC 로드맵</text>
+  <text x="72" y="130" fill="#b7c3c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">긴 SI 프로젝트가 아니라 현장 질문 3개를 데이터로 답하는 것부터 시작합니다.</text>
+  <g transform="translate(86 222)">
+    <rect width="250" height="250" rx="8" fill="#111c20" stroke="#2b444b"/>
+    <text x="28" y="52" fill="#a7dc37" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">1주차</text>
+    <text x="28" y="104" fill="#fff" font-size="31" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">데이터 점검</text>
+    <text x="28" y="154" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">설비 신호, 품질 이력,</text>
+    <text x="28" y="184" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">작업 기준정보 확인</text>
+  </g>
+  <g transform="translate(358 222)">
+    <rect width="250" height="250" rx="8" fill="#111c20" stroke="#2b444b"/>
+    <text x="28" y="52" fill="#a7dc37" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">2주차</text>
+    <text x="28" y="104" fill="#fff" font-size="31" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">연결·정렬</text>
+    <text x="28" y="154" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">시간 기준, 태그 명칭,</text>
+    <text x="28" y="184" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">로트·설비 기준 통일</text>
+  </g>
+  <g transform="translate(630 222)">
+    <rect width="250" height="250" rx="8" fill="#111c20" stroke="#2b444b"/>
+    <text x="28" y="52" fill="#a7dc37" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">3주차</text>
+    <text x="28" y="104" fill="#fff" font-size="31" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">운영 화면</text>
+    <text x="28" y="154" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">라인별 상태, 이상 알림,</text>
+    <text x="28" y="184" fill="#bdc9ce" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="700">현장 입력 화면 구성</text>
+  </g>
+  <g transform="translate(902 222)">
+    <rect width="250" height="250" rx="8" fill="#a7dc37"/>
+    <text x="28" y="52" fill="#071013" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">4주차</text>
+    <text x="28" y="104" fill="#071013" font-size="31" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="900">AI 질문</text>
+    <text x="28" y="154" fill="#1d2a11" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="800">불량 원인, 정지 위험,</text>
+    <text x="28" y="184" fill="#1d2a11" font-size="18" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-weight="800">에너지 낭비 구간 검증</text>
+  </g>
+  <path d="M336 347H358M608 347H630M880 347H902" fill="none" stroke="#00a7d8" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(86 532)">
+    <rect width="1066" height="66" rx="8" fill="#0d171a" stroke="#2b444b"/>
+    <text x="30" y="42" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">성공 기준: 새 시스템 도입 자체보다 “현장 질문에 답하는 시간”이 줄었는지 확인합니다.</text>
+  </g>
+</svg>

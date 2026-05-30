@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>컨포트랩 AI 품질관리·예지보전 플레이북 | 제조 AI 운영 가이드</title>
+    <meta name="description" content="컨포트랩(CONPORTLAB)이 정리한 AI 품질관리와 설비 예지보전 플레이북입니다. 불량률, 설비 정지, 작업공수, 에너지 비용을 줄이는 제조 AI 데이터 설계를 설명합니다.">
+    <meta name="keywords" content="컨포트랩, CONPORTLAB, AI 품질관리, 설비 예지보전, 제조 AI, 제조 AI 에이전트, 불량률 감소, 설비 데이터 분석">
+    <link rel="canonical" href="https://conportlab.com/blog/ai-quality-predictive-maintenance-playbook.html">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#071013">
+    <meta name="application-name" content="컨포트랩">
+    <meta name="apple-mobile-web-app-title" content="컨포트랩">
+    <link rel="icon" href="/conportlab-client-preview/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/conportlab-client-preview/apple-touch-icon.png">
+    <link rel="manifest" href="/conportlab-client-preview/site.webmanifest">
+    <link rel="alternate" href="https://conportlab.com/blog/ai-quality-predictive-maintenance-playbook.html" hreflang="ko-KR">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="컨포트랩">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="컨포트랩 AI 품질관리·예지보전 플레이북 | 제조 AI 운영 가이드">
+    <meta property="og:description" content="AI 품질관리와 설비 예지보전을 모델 도입이 아니라 데이터, 원인 분석, 현장 조치 흐름으로 설계하는 방법입니다.">
+    <meta property="og:url" content="https://conportlab.com/blog/ai-quality-predictive-maintenance-playbook.html">
+    <meta property="og:image" content="https://conportlab.com/assets/conportlab-og.png">
+    <meta property="og:image:secure_url" content="https://conportlab.com/assets/conportlab-og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="컨포트랩 AI 품질관리와 설비 예지보전">
+    <meta property="article:published_time" content="2026-05-25T09:00:00+09:00">
+    <meta property="article:modified_time" content="2026-05-25T09:00:00+09:00">
+    <meta property="article:section" content="AI 품질관리">
+    <meta property="article:tag" content="컨포트랩">
+    <meta property="article:tag" content="AI 품질관리">
+    <meta property="article:tag" content="설비 예지보전">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="컨포트랩 AI 품질관리·예지보전 플레이북 | 제조 AI 운영 가이드">
+    <meta name="twitter:description" content="불량률, 설비 정지, 작업공수, 에너지 비용을 줄이는 제조 AI 운영 설계를 정리했습니다.">
+    <meta name="twitter:image" content="https://conportlab.com/assets/conportlab-og.png">
+    <link rel="stylesheet" href="../styles.css?v=20260529-official-copy-2">
+    <link rel="stylesheet" href="../premium.css?v=20260529-official-copy-2">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "컨포트랩 AI 품질관리·예지보전 플레이북: 제조 AI 운영 가이드",
+        "alternativeHeadline": "CONPORTLAB AI Quality Management and Predictive Maintenance Playbook",
+        "description": "컨포트랩(CONPORTLAB)이 정리한 AI 품질관리와 설비 예지보전 플레이북입니다. 불량률, 설비 정지, 작업공수, 에너지 비용을 줄이는 제조 AI 데이터 설계를 설명합니다.",
+        "datePublished": "2026-05-25T09:00:00+09:00",
+        "dateModified": "2026-05-25T09:00:00+09:00",
+        "inLanguage": "ko-KR",
+        "author": {"@type": "Organization", "name": "컨포트랩", "url": "https://conportlab.com/"},
+        "publisher": {"@type": "Organization", "@id": "https://conportlab.com/#organization", "name": "컨포트랩", "url": "https://conportlab.com/", "logo": {"@type": "ImageObject", "url": "https://conportlab.com/assets/imweb/conportlab-logo-dark.png", "width": 965, "height": 105}},
+        "mainEntityOfPage": "https://conportlab.com/blog/ai-quality-predictive-maintenance-playbook.html",
+        "image": [
+          "https://conportlab.com/assets/conportlab-og.png",
+          "https://conportlab.com/assets/blog/conportlab-quality-loop.svg",
+          "https://conportlab.com/assets/blog/conportlab-signal-matrix.svg",
+          "https://conportlab.com/assets/blog/conportlab-operator-workflow.svg",
+          "https://conportlab.com/assets/blog/conportlab-roi-dashboard.svg"
+        ],
+        "keywords": "컨포트랩, CONPORTLAB, AI 품질관리, 설비 예지보전, 제조 AI, 제조 AI 에이전트, 불량률 감소",
+        "about": [
+          {"@type": "Thing", "name": "AI 품질관리"},
+          {"@type": "Thing", "name": "설비 예지보전"},
+          {"@type": "Thing", "name": "제조 AI 에이전트"}
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://conportlab.com/"},
+          {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://conportlab.com/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "AI 품질관리·예지보전 플레이북", "item": "https://conportlab.com/blog/ai-quality-predictive-maintenance-playbook.html"}
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "AI 품질관리는 검사 자동화와 같은 뜻인가요?",
+            "acceptedAnswer": {"@type": "Answer", "text": "검사 자동화는 AI 품질관리의 일부일 수 있지만 전부는 아닙니다. AI 품질관리는 검사 결과, 설비 신호, 작업 조건, 로트 정보를 함께 보고 불량 원인과 조치 우선순위를 찾는 운영 흐름입니다."}
+          },
+          {
+            "@type": "Question",
+            "name": "예지보전을 시작하려면 어떤 데이터가 필요한가요?",
+            "acceptedAnswer": {"@type": "Answer", "text": "정비 이력, 설비 알람, 전류, 온도, 진동, 정지 로그처럼 고장 전후의 상태를 설명할 수 있는 데이터가 필요합니다. 데이터가 부족하면 먼저 반복 정지 설비 한두 대를 대상으로 PoC를 설계하는 것이 좋습니다."}
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="blog-page">
+    <header class="site-header" data-header>
+      <a class="brand" href="/conportlab-client-preview/index.html#top" aria-label="컨포트랩">컨포트랩</a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/company/">회사소개</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/company/">회사소개</a>
+            <a href="/conportlab-client-preview/55/">연혁</a>
+            <a href="/conportlab-client-preview/54/">뉴스&미디어</a>
+            <a href="/conportlab-client-preview/recruit/">채용</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/product/">제품</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/product/#s202509019bc8e799ef047">제조 O&amp;M 시스템</a>
+            <a href="/conportlab-client-preview/product/#s20250901b657223b7e56c">AIOps 플랫폼</a>
+            <a href="/conportlab-client-preview/product/#s20231114b4aacbef4336e">엣지 게이트웨이</a>
+            <a href="/conportlab-client-preview/product/#s2025090297b0844df29d1">산업용 센서</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/solution/">솔루션</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/solution/#s202508317d65ce34bfd87">AI 품질 관리</a>
+            <a href="/conportlab-client-preview/solution/#s202509022f4561563f5ab">AI 생산 최적화</a>
+            <a href="/conportlab-client-preview/solution/#s20250902ea9df7da2cea6">AI 설비 보전</a>
+            <a href="/conportlab-client-preview/solution/#s20250902d2c599cd5d7f0">AI 에너지 관리</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item-usecase">
+          <a class="nav-top-link" href="/conportlab-client-preview/usecase/">적용 사례</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/usecase/">사례 일람</a>
+            <a href="/conportlab-client-preview/cases/semiconductor-parts-monitoring.html">도입 후기 인터뷰</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item-resources">
+          <a class="nav-top-link" href="/conportlab-client-preview/blog/">콘텐츠</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/blog/">블로그</a>
+            <a href="/conportlab-client-preview/news/">뉴스룸</a>
+            <a href="/conportlab-client-preview/index.html#resources">뉴스레터</a>
+          </div>
+        </div>
+        <div class="nav-item nav-link-item nav-item-contact">
+          <a class="nav-top-link" href="/conportlab-client-preview/ContactUs/">문의</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/ContactUs/">문의</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-small" href="/conportlab-client-preview/ContactUs/">문의</a>
+        <div class="header-language-group" aria-label="언어 선택">
+          <a class="language" href="/conportlab-client-preview/">KO</a><span class="language-separator">l</span><a class="language" href="http://en.conportlab.com/">EN</a><span class="language-separator">l</span><a class="language" href="http://en.conportlab.com/">JP</a>
+        </div>
+      </div>
+      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" aria-label="모바일 메뉴" data-mobile-nav>
+      <details>
+        <summary>회사소개</summary>
+        <a href="/conportlab-client-preview/company/">회사소개</a>
+        <a href="/conportlab-client-preview/55/">연혁</a>
+        <a href="/conportlab-client-preview/54/">뉴스&미디어</a>
+        <a href="/conportlab-client-preview/recruit/">채용</a>
+      </details>
+      <details>
+        <summary>제품</summary>
+        <a href="/conportlab-client-preview/product/#s202509019bc8e799ef047">제조 O&amp;M 시스템</a>
+        <a href="/conportlab-client-preview/product/#s20250901b657223b7e56c">AIOps 플랫폼</a>
+        <a href="/conportlab-client-preview/product/#s20231114b4aacbef4336e">엣지 게이트웨이</a>
+        <a href="/conportlab-client-preview/product/#s2025090297b0844df29d1">산업용 센서</a>
+      </details>
+      <details>
+        <summary>솔루션</summary>
+        <a href="/conportlab-client-preview/solution/#s202508317d65ce34bfd87">AI 품질 관리</a>
+        <a href="/conportlab-client-preview/solution/#s202509022f4561563f5ab">AI 생산 최적화</a>
+        <a href="/conportlab-client-preview/solution/#s20250902ea9df7da2cea6">AI 설비 보전</a>
+        <a href="/conportlab-client-preview/solution/#s20250902d2c599cd5d7f0">AI 에너지 관리</a>
+      </details>
+      <details>
+        <summary>적용 사례</summary>
+        <a href="/conportlab-client-preview/usecase/">사례 일람</a>
+        <a href="/conportlab-client-preview/cases/semiconductor-parts-monitoring.html">도입 후기 인터뷰</a>
+      </details>
+      <details>
+        <summary>콘텐츠</summary>
+        <a href="/conportlab-client-preview/blog/">블로그</a>
+        <a href="/conportlab-client-preview/news/">뉴스룸</a>
+        <a href="/conportlab-client-preview/index.html#resources">뉴스레터</a>
+      </details>
+      <a href="/conportlab-client-preview/ContactUs/">문의</a>
+      <div class="mobile-language-links" aria-label="언어 선택">
+        <a href="/conportlab-client-preview/">KO</a><span>l</span><a href="http://en.conportlab.com/">EN</a><span>l</span><a href="http://en.conportlab.com/">JP</a>
+      </div>
+    </nav>
+    <main>
+      <section class="blog-hero">
+        <div class="blog-hero-inner">
+          <p class="eyebrow">컨포트랩 AI 품질관리</p>
+          <p class="blog-hero-title">불량과 설비 정지를 줄이는 제조 AI 운영 플레이북</p>
+          <p>AI 품질관리와 예지보전은 모델을 구매하는 일이 아닙니다. 컨포트랩은 데이터, 원인 후보, 현장 조치, 성과 지표가 닫힌 루프로 움직이게 설계합니다.</p>
+        </div>
+      </section>
+      <div class="article-shell">
+        <nav class="breadcrumb" aria-label="이동 경로"><a href="../index.html">홈</a><span>/</span><a href="index.html">블로그</a><span>/</span><span>AI 품질관리·예지보전</span></nav>
+        <article>
+          <h1>컨포트랩 AI 품질관리·예지보전 플레이북: 제조 AI 운영 가이드</h1>
+          <p class="article-meta">컨포트랩 · 2026년 5월 25일</p>
+          <p class="article-lead">AI 품질관리와 설비 예지보전은 제조 현장에서 가장 많이 검색되는 제조 AI 주제입니다. 하지만 실제 도입이 어려운 이유는 모델이 부족해서가 아니라, 불량과 설비 정지를 설명하는 데이터가 흩어져 있고 조치 기록이 다시 학습 데이터로 돌아오지 않기 때문입니다.</p>
+          <h2>AI 품질관리는 검사 자동화보다 넓습니다</h2>
+          <p>검사 이미지를 AI로 판정하거나 불량 여부를 자동 분류하는 일은 중요합니다. 그러나 제조 현장의 구매 책임자와 공장장이 진짜 보고 싶은 것은 “왜 반복되는가”와 “다음에는 무엇을 바꿔야 하는가”입니다. 불량 판정 결과만 쌓이면 품질 회의는 여전히 길어집니다. 검사 결과가 설비 온도, 전류, 압력, 작업 조건, 원재료 로트, 작업자 입력과 연결돼야 원인 후보를 좁힐 수 있습니다.</p>
+          <p>국내 제조 AI 레퍼런스도 이 방향으로 움직입니다. 포스코DX는 산업 현장에 특화한 피지컬 AI와 설비 데이터 활용을 강조하고, CJ올리브네트웍스는 스마트 제조와 AI·빅데이터를 운영 혁신의 한 축으로 제시합니다. LG CNS는 Factova Control에서 서로 다른 설비 데이터를 표준화하고 모터 전류, 온도, 진동 같은 실시간 신호로 이상 징후를 감지하는 방향을 소개했습니다. 미라콤아이앤씨는 MES 위에 자연어 기반 제조 분석을 더하는 흐름을 제시했고, 울랄라랩도 에너지와 설비 데이터 기반 예지정비 사례를 전면에 내세웁니다. 로크웰 오토메이션의 산업용 DataOps 자료 역시 IT·OT 데이터를 하나의 근거로 만들려는 방향입니다. 엠아이큐브솔루션 같은 제조 IT 기업도 MES와 제조 AI를 분리하지 않고 제조 지능화 흐름으로 묶습니다. 컨포트랩은 이 흐름을 중소·중견 제조 현장에서 실행 가능한 운영 단위로 낮추는 데 집중합니다.</p>
+
+          <figure class="article-figure">
+            <img src="../assets/blog/conportlab-quality-loop.svg" alt="컨포트랩 AI 품질관리와 설비 예지보전 운영 루프">
+            <figcaption>AI 품질관리와 예지보전은 불량 감지, 설비 신호, AI 분석, 현장 조치가 반복되는 폐쇄형 루프가 되어야 합니다.</figcaption>
+          </figure>
+
+          <h2>예지보전은 고장 예측보다 정비 우선순위에 가깝습니다</h2>
+          <p>예지보전이라는 단어 때문에 많은 팀이 처음부터 고장 시점을 정확히 맞히는 모델을 상상합니다. 하지만 초기 도입에서 더 중요한 것은 정비 우선순위입니다. 어떤 설비를 먼저 볼지, 어떤 부품을 준비할지, 어떤 알람 조합을 위험 신호로 볼지 정하는 것만으로도 현장의 대응 시간은 줄어듭니다.</p>
+          <p>이를 위해서는 정비 이력과 설비 알람이 반드시 함께 있어야 합니다. 온도, 진동, 전류 같은 센서값만으로는 “문제가 있었다”는 사실은 보이지만, 실제 정비 조치와 비용 영향을 설명하기 어렵습니다. 반대로 정비 기록만 있고 설비 상태 신호가 없으면 다음 이상을 조기에 잡기 어렵습니다. 컨포트랩은 반복 정지 설비부터 신호와 이력을 묶고, 운영자가 바로 확인할 수 있는 위험 점수와 조치 항목으로 변환하는 접근을 권합니다.</p>
+
+          <figure class="article-figure">
+            <img src="../assets/blog/conportlab-signal-matrix.svg" alt="AI 품질관리와 예지보전을 위한 품질, 설비, 에너지 데이터 신호 매트릭스">
+            <figcaption>목표 지표별로 필요한 입력 데이터와 현장 조치를 정리하면 PoC 범위를 과하게 키우지 않을 수 있습니다.</figcaption>
+          </figure>
+
+          <h2>처음부터 전 공장 AI를 목표로 잡지 마세요</h2>
+          <p>제조 AI 프로젝트가 무거워지는 이유는 범위가 너무 넓기 때문입니다. “전 공장 데이터를 모두 모아 AI를 만들자”는 목표는 매력적이지만, 실제로는 태그 정리와 기준정보 통합에서 시간이 오래 걸립니다. 첫 프로젝트는 공정 하나, 설비 두세 대, 품질 문제 하나로 좁혀야 합니다. 컨포트랩이 추천하는 첫 질문은 다음과 같습니다.</p>
+          <ul>
+            <li>최근 30일 동안 반복된 불량 유형은 무엇인가요?</li>
+            <li>불량이 발생한 시간대에 함께 움직인 설비 신호는 무엇인가요?</li>
+            <li>정비 이력과 설비 알람 사이에 반복 패턴이 있나요?</li>
+            <li>운영자가 조치 후 남기는 기록은 다음 분석에 다시 들어가나요?</li>
+          </ul>
+          <p>이 질문에 답하면 AI 모델보다 먼저 필요한 데이터 구조가 보입니다. 품질 담당자는 검사 결과와 원인 후보를, 설비 담당자는 정지 위험과 점검 우선순위를, 생산 담당자는 라인별 생산성 변화를 같은 화면에서 확인해야 합니다.</p>
+
+          <h2>제조 AI 에이전트는 보고서가 아니라 조치를 줄여야 합니다</h2>
+          <p>제조 AI 에이전트의 가치는 멋진 답변 문장이 아닙니다. 운영자가 매일 하는 확인, 정리, 보고, 배정 업무를 줄이는 데 있습니다. 예를 들어 불량률이 급상승하면 AI 에이전트는 관련 작업지시, 로트, 설비 알람, 검사 결과를 모아 원인 후보를 제시하고, 담당자에게 확인 항목을 넘겨야 합니다. 조치가 끝나면 결과를 기록해 다음 분석의 학습 데이터가 되도록 해야 합니다.</p>
+
+          <figure class="article-figure">
+            <img src="../assets/blog/conportlab-operator-workflow.svg" alt="컨포트랩 제조 AI 에이전트가 이상 알림, 데이터 확인, AI 제안, 조치 기록으로 이어지는 운영자 워크플로우">
+            <figcaption>좋은 제조 AI 화면은 알림에서 끝나지 않고 담당자 배정과 조치 기록까지 이어집니다.</figcaption>
+          </figure>
+
+          <h2>성과 지표는 AI 정확도보다 운영 비용에 둡니다</h2>
+          <p>AI 품질관리 프로젝트의 성공 지표를 모델 정확도 하나로 잡으면 현장 설득이 어렵습니다. 의사결정권자에게는 불량률, 정지시간, 작업공수, 에너지 비용, 보고서 작성 시간이 더 직접적인 언어입니다. 따라서 PoC 설계 단계에서 기준선을 정해야 합니다. 지난 3개월 평균 불량률, 반복 정지 건수, 품질 회의 준비 시간, 설비 점검 리드타임 같은 지표를 잡고 도입 후 변화를 추적합니다.</p>
+          <p>컨포트랩의 메시지는 단순합니다. AI는 현장을 더 바쁘게 만드는 장식이 아니라, 운영자가 같은 데이터를 다시 찾는 시간을 줄이는 도구여야 합니다. 품질 이상을 빠르게 설명하고, 설비 정지를 먼저 의심하고, 에너지 낭비 구간을 보여주며, 조치 기록을 남겨 다음 판단의 근거로 만드는 것이 제조 AI 운영의 본질입니다.</p>
+
+          <figure class="article-figure">
+            <img src="../assets/blog/conportlab-roi-dashboard.svg" alt="컨포트랩 AI 품질관리와 예지보전 도입 성과 대시보드">
+            <figcaption>의사결정권자는 AI 모델 자체보다 불량률, 정지시간, 작업공수, 에너지 비용이 어떻게 달라지는지를 봅니다.</figcaption>
+          </figure>
+
+          <h2>자주 묻는 질문</h2>
+          <p><strong>AI 품질관리는 검사 자동화와 같은 뜻인가요?</strong><br>아닙니다. 검사 자동화는 AI 품질관리의 일부일 수 있지만, 컨포트랩이 말하는 AI 품질관리는 검사 결과와 설비 신호, 작업 조건, 조치 기록을 연결해 원인과 다음 행동을 찾는 운영 흐름입니다.</p>
+          <p><strong>예지보전을 시작하려면 어떤 데이터가 필요한가요?</strong><br>정비 이력, 설비 알람, 전류, 온도, 진동, 정지 로그처럼 고장 전후의 상태를 설명할 수 있는 데이터가 필요합니다. 데이터가 부족하면 반복 정지 설비 한두 대부터 시작하는 것이 좋습니다.</p>
+
+          <div class="article-cta">
+            <strong>반복 불량과 설비 정지를 먼저 줄일 PoC를 설계하세요.</strong>
+            <p>컨포트랩은 품질 이력, 설비 신호, 조치 기록을 연결해 제조 AI가 실제 운영 지표를 바꾸도록 설계합니다.</p>
+            <a class="button" href="/conportlab-client-preview/ContactUs/">도입 문의</a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="section-inner footer-layout">
+        <strong>컨포트랩</strong>
+        <div class="footer-contact">
+          <p>서울특별시 송파구 송파대로 167, B동 817호 (문정동, 문정역테라타워)</p>
+          <p>T 070-8287-1613 F 02-2007-0399 E admin@conportlab.com</p>
+          <p>©2026. CONPORTLAB All Rights Reserved.</p>
+        </div>
+        <div class="footer-legal" aria-label="정책 링크">
+          <span>이용약관</span><span aria-hidden="true">|</span><span>개인정보처리방침</span>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js?v=20260530-interaction-qa"></script>
+  </body>
+</html>

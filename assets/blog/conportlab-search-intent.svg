@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 검색 의도 맵</title>
+  <desc id="desc">네이버와 구글 검색 사용자가 제조 AI와 스마트공장 정보를 찾는 흐름을 정리한 맵</desc>
+  <rect width="1200" height="675" fill="#f7fafb"/>
+  <g fill="none" stroke="#dbe5e8" stroke-width="1">
+    <path d="M0 122H1200M0 244H1200M0 366H1200M0 488H1200M0 610H1200"/>
+    <path d="M184 0V675M384 0V675M584 0V675M784 0V675M984 0V675"/>
+  </g>
+  <text x="72" y="86" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">컨포트랩 SEO 검색 의도 맵</text>
+  <text x="72" y="128" fill="#5b6770" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">브랜드 검색과 문제 해결 검색을 같은 문맥에서 반복 노출합니다.</text>
+  <g transform="translate(72 190)">
+    <rect width="318" height="338" rx="8" fill="#071013"/>
+    <text x="28" y="52" fill="#00a7d8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">브랜드 검색</text>
+    <text x="28" y="106" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="38" font-weight="900">컨포트랩</text>
+    <text x="28" y="150" fill="#a7dc37" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="30" font-weight="900">CONPORTLAB</text>
+    <text x="28" y="210" fill="#d6dee2" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">제조 운영관리 AX</text>
+    <text x="28" y="248" fill="#d6dee2" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">제조 AI 플랫폼</text>
+    <text x="28" y="286" fill="#d6dee2" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">노코드 제조 데이터</text>
+  </g>
+  <g transform="translate(434 190)">
+    <rect width="318" height="338" rx="8" fill="#fff" stroke="#d6e1e4"/>
+    <text x="28" y="52" fill="#0089a6" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">문제 검색</text>
+    <text x="28" y="106" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">스마트공장 구축</text>
+    <text x="28" y="154" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">설비 데이터 수집</text>
+    <text x="28" y="202" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">MES 연동</text>
+    <text x="28" y="268" fill="#5b6770" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">구축 기간, 비용, 현장 적용성</text>
+  </g>
+  <g transform="translate(796 190)">
+    <rect width="332" height="338" rx="8" fill="#fff" stroke="#d6e1e4"/>
+    <text x="28" y="52" fill="#0089a6" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">성과 검색</text>
+    <text x="28" y="106" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">AI 품질관리</text>
+    <text x="28" y="154" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">예지보전</text>
+    <text x="28" y="202" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="29" font-weight="900">생산성 향상</text>
+    <text x="28" y="268" fill="#5b6770" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">불량률, 정지시간, 작업공수</text>
+  </g>
+  <path d="M390 360C420 360 420 360 434 360M752 360C782 360 782 360 796 360" fill="none" stroke="#a7dc37" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(72 570)">
+    <rect width="1056" height="54" rx="8" fill="#eaf3f5"/>
+    <text x="28" y="36" fill="#101416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="900">원칙: 글 제목, H1, 본문 첫 200자, 이미지 alt, 내부 링크에 같은 브랜드 맥락을 자연스럽게 반복합니다.</text>
+  </g>
+</svg>

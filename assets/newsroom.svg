@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial AI newsroom</title>
+  <desc id="desc">A newsroom-style layout with article cards, video frames, and newsletter blocks.</desc>
+  <rect width="1200" height="760" fill="#e9f2f4"/>
+  <rect x="80" y="80" width="1040" height="600" rx="24" fill="#ffffff"/>
+  <rect x="130" y="140" width="430" height="280" rx="14" fill="#111416"/>
+  <path d="M304 230l126 70-126 70z" fill="#00a7d8"/>
+  <rect x="610" y="140" width="420" height="50" rx="8" fill="#111416"/>
+  <rect x="610" y="226" width="300" height="24" rx="12" fill="#4f5a62"/>
+  <rect x="610" y="274" width="360" height="24" rx="12" fill="#4f5a62" opacity="0.58"/>
+  <rect x="610" y="322" width="260" height="24" rx="12" fill="#4f5a62" opacity="0.58"/>
+  <g fill="#f7f9f8" stroke="#ced8dd">
+    <rect x="130" y="470" width="260" height="140" rx="12"/>
+    <rect x="470" y="470" width="260" height="140" rx="12"/>
+    <rect x="810" y="470" width="260" height="140" rx="12"/>
+  </g>
+  <g fill="#00a7d8">
+    <rect x="162" y="504" width="126" height="16" rx="8"/>
+    <rect x="502" y="504" width="126" height="16" rx="8"/>
+    <rect x="842" y="504" width="126" height="16" rx="8"/>
+  </g>
+  <g fill="#111416" opacity="0.72">
+    <rect x="162" y="548" width="180" height="14" rx="7"/>
+    <rect x="502" y="548" width="178" height="14" rx="7"/>
+    <rect x="842" y="548" width="176" height="14" rx="7"/>
+  </g>
+</svg>
+

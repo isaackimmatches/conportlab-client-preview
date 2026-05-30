@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 AI 품질관리 성과 대시보드</title>
+  <desc id="desc">AI 품질관리와 예지보전 도입 후 불량률, 정지시간, 작업공수, 에너지 비용을 추적하는 대시보드</desc>
+  <rect width="1200" height="675" fill="#071013"/>
+  <text x="72" y="88" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">도입 성과는 운영 지표로 확인합니다</text>
+  <text x="72" y="130" fill="#b7c3c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">AI 모델 정확도만 보지 않고 현장 비용과 시간을 함께 봅니다.</text>
+  <g transform="translate(72 188)" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif">
+    <rect width="1056" height="410" rx="8" fill="#0d171a" stroke="#2c454b"/>
+    <g transform="translate(36 34)">
+      <rect width="230" height="138" rx="8" fill="#fff"/>
+      <text x="22" y="44" fill="#59676e" font-size="18" font-weight="900">불량률</text>
+      <text x="22" y="100" fill="#101416" font-size="48" font-weight="900">25% 감소</text>
+    </g>
+    <g transform="translate(290 34)">
+      <rect width="230" height="138" rx="8" fill="#fff"/>
+      <text x="22" y="44" fill="#59676e" font-size="18" font-weight="900">설비 정지시간</text>
+      <text x="22" y="100" fill="#101416" font-size="48" font-weight="900">18% 감소</text>
+    </g>
+    <g transform="translate(544 34)">
+      <rect width="230" height="138" rx="8" fill="#fff"/>
+      <text x="22" y="44" fill="#59676e" font-size="18" font-weight="900">작업공수</text>
+      <text x="22" y="100" fill="#101416" font-size="48" font-weight="900">80% 감축</text>
+    </g>
+    <g transform="translate(798 34)">
+      <rect width="222" height="138" rx="8" fill="#a7dc37"/>
+      <text x="22" y="44" fill="#071013" font-size="18" font-weight="900">에너지 비용</text>
+      <text x="22" y="100" fill="#071013" font-size="46" font-weight="900">구간 추적</text>
+    </g>
+    <g transform="translate(42 232)">
+      <path d="M0 110C94 88 124 56 212 68C318 82 338 20 430 36C534 54 560 90 658 62C740 38 804 52 978 16" fill="none" stroke="#00a7d8" stroke-width="6" stroke-linecap="round"/>
+      <path d="M0 148H978" stroke="#2c454b" stroke-width="2"/>
+      <path d="M0 52H978" stroke="#2c454b" stroke-width="2" opacity=".55"/>
+      <text x="0" y="190" fill="#b7c3c8" font-size="18" font-weight="800">PoC 전</text>
+      <text x="450" y="190" fill="#b7c3c8" font-size="18" font-weight="800">운영 안정화</text>
+      <text x="878" y="190" fill="#b7c3c8" font-size="18" font-weight="800">확산</text>
+    </g>
+  </g>
+</svg>

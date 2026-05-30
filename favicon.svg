@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="컨포트랩">
+  <rect width="512" height="512" rx="112" fill="#071013"/>
+  <path d="M104 256c0-91 61-154 151-154 55 0 101 22 129 63l-62 48c-16-24-38-36-67-36-45 0-76 32-76 79s31 79 76 79c29 0 51-12 67-36l62 48c-28 41-74 63-129 63-90 0-151-63-151-154Z" fill="#13bfe4"/>
+  <path d="M320 108h88v224h-88V108Zm0 260h88v36h-88v-36Z" fill="#a8dd35"/>
+  <path d="M108 414h296" stroke="#f7fbff" stroke-width="28" stroke-linecap="round" opacity=".92"/>
+</svg>

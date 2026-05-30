@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준 | 컨포트랩(CONPORTLAB)</title>
+    <meta name="description" content="AI 품질 관리를 시작하기 전 설비 신호, 작업 조건, 품질 이력, 불량률 기준을 어떻게 연결해야 하는지 설명합니다.">
+    <link rel="canonical" href="https://conportlab.com/blog/ai-quality-management.html">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#071013">
+    <meta name="application-name" content="컨포트랩">
+    <meta name="apple-mobile-web-app-title" content="컨포트랩">
+    <link rel="icon" href="/conportlab-client-preview/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/conportlab-client-preview/apple-touch-icon.png">
+    <link rel="manifest" href="/conportlab-client-preview/site.webmanifest">
+    <link rel="alternate" href="https://conportlab.com/blog/ai-quality-management.html" hreflang="ko-KR">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="컨포트랩">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준 | 컨포트랩(CONPORTLAB)">
+    <meta property="og:description" content="AI 품질 관리를 시작하기 전 설비 신호, 작업 조건, 품질 이력, 불량률 기준을 어떻게 연결해야 하는지 설명합니다.">
+    <meta property="og:url" content="https://conportlab.com/blog/ai-quality-management.html">
+    <meta property="og:image" content="https://conportlab.com/assets/conportlab-og.png">
+    <meta property="og:image:secure_url" content="https://conportlab.com/assets/conportlab-og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="컨포트랩 제조 운영관리 AX 솔루션">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준 | 컨포트랩(CONPORTLAB)">
+    <meta name="twitter:description" content="AI 품질 관리를 시작하기 전 설비 신호, 작업 조건, 품질 이력, 불량률 기준을 어떻게 연결해야 하는지 설명합니다.">
+    <meta name="twitter:image" content="https://conportlab.com/assets/conportlab-og.png">
+    <link rel="stylesheet" href="../styles.css?v=20260529-official-copy-2">
+    <link rel="stylesheet" href="../premium.css?v=20260529-official-copy-2">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준",
+        "description": "AI 품질 관리를 시작하기 전 설비 신호, 작업 조건, 품질 이력, 불량률 기준을 어떻게 연결해야 하는지 설명합니다.",
+        "datePublished": "2026-05-23",
+        "dateModified": "2026-05-23",
+        "author": {"@type": "Organization", "name": "컨포트랩"},
+        "publisher": {"@type": "Organization", "@id": "https://conportlab.com/#organization", "name": "컨포트랩", "url": "https://conportlab.com/", "logo": {"@type": "ImageObject", "url": "https://conportlab.com/assets/imweb/conportlab-logo-dark.png", "width": 965, "height": 105}},
+        "mainEntityOfPage": "https://conportlab.com/blog/ai-quality-management.html",
+        "image": "https://conportlab.com/assets/factory-line.svg"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://conportlab.com/"},
+          {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://conportlab.com/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "AI 품질 관리"}
+        ]
+      }
+    </script>
+  </head>
+  <body class="blog-page">
+    <header class="site-header" data-header>
+      <a class="brand" href="/conportlab-client-preview/index.html#top" aria-label="컨포트랩">컨포트랩</a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/company/">회사소개</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/company/">회사소개</a>
+            <a href="/conportlab-client-preview/55/">연혁</a>
+            <a href="/conportlab-client-preview/54/">뉴스&미디어</a>
+            <a href="/conportlab-client-preview/recruit/">채용</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/product/">제품</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/product/#s202509019bc8e799ef047">제조 O&amp;M 시스템</a>
+            <a href="/conportlab-client-preview/product/#s20250901b657223b7e56c">AIOps 플랫폼</a>
+            <a href="/conportlab-client-preview/product/#s20231114b4aacbef4336e">엣지 게이트웨이</a>
+            <a href="/conportlab-client-preview/product/#s2025090297b0844df29d1">산업용 센서</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-top-link" href="/conportlab-client-preview/solution/">솔루션</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/solution/#s202508317d65ce34bfd87">AI 품질 관리</a>
+            <a href="/conportlab-client-preview/solution/#s202509022f4561563f5ab">AI 생산 최적화</a>
+            <a href="/conportlab-client-preview/solution/#s20250902ea9df7da2cea6">AI 설비 보전</a>
+            <a href="/conportlab-client-preview/solution/#s20250902d2c599cd5d7f0">AI 에너지 관리</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item-usecase">
+          <a class="nav-top-link" href="/conportlab-client-preview/usecase/">적용 사례</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/usecase/">사례 일람</a>
+            <a href="/conportlab-client-preview/cases/semiconductor-parts-monitoring.html">도입 후기 인터뷰</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item-resources">
+          <a class="nav-top-link" href="/conportlab-client-preview/blog/">콘텐츠</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/blog/">블로그</a>
+            <a href="/conportlab-client-preview/news/">뉴스룸</a>
+            <a href="/conportlab-client-preview/index.html#resources">뉴스레터</a>
+          </div>
+        </div>
+        <div class="nav-item nav-link-item nav-item-contact">
+          <a class="nav-top-link" href="/conportlab-client-preview/ContactUs/">문의</a>
+          <div class="nav-panel">
+            <a href="/conportlab-client-preview/ContactUs/">문의</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-small" href="/conportlab-client-preview/ContactUs/">문의</a>
+        <div class="header-language-group" aria-label="언어 선택">
+          <a class="language" href="/conportlab-client-preview/">KO</a><span class="language-separator">l</span><a class="language" href="http://en.conportlab.com/">EN</a><span class="language-separator">l</span><a class="language" href="http://en.conportlab.com/">JP</a>
+        </div>
+      </div>
+      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" aria-label="모바일 메뉴" data-mobile-nav>
+      <details>
+        <summary>회사소개</summary>
+        <a href="/conportlab-client-preview/company/">회사소개</a>
+        <a href="/conportlab-client-preview/55/">연혁</a>
+        <a href="/conportlab-client-preview/54/">뉴스&미디어</a>
+        <a href="/conportlab-client-preview/recruit/">채용</a>
+      </details>
+      <details>
+        <summary>제품</summary>
+        <a href="/conportlab-client-preview/product/#s202509019bc8e799ef047">제조 O&amp;M 시스템</a>
+        <a href="/conportlab-client-preview/product/#s20250901b657223b7e56c">AIOps 플랫폼</a>
+        <a href="/conportlab-client-preview/product/#s20231114b4aacbef4336e">엣지 게이트웨이</a>
+        <a href="/conportlab-client-preview/product/#s2025090297b0844df29d1">산업용 센서</a>
+      </details>
+      <details>
+        <summary>솔루션</summary>
+        <a href="/conportlab-client-preview/solution/#s202508317d65ce34bfd87">AI 품질 관리</a>
+        <a href="/conportlab-client-preview/solution/#s202509022f4561563f5ab">AI 생산 최적화</a>
+        <a href="/conportlab-client-preview/solution/#s20250902ea9df7da2cea6">AI 설비 보전</a>
+        <a href="/conportlab-client-preview/solution/#s20250902d2c599cd5d7f0">AI 에너지 관리</a>
+      </details>
+      <details>
+        <summary>적용 사례</summary>
+        <a href="/conportlab-client-preview/usecase/">사례 일람</a>
+        <a href="/conportlab-client-preview/cases/semiconductor-parts-monitoring.html">도입 후기 인터뷰</a>
+      </details>
+      <details>
+        <summary>콘텐츠</summary>
+        <a href="/conportlab-client-preview/blog/">블로그</a>
+        <a href="/conportlab-client-preview/news/">뉴스룸</a>
+        <a href="/conportlab-client-preview/index.html#resources">뉴스레터</a>
+      </details>
+      <a href="/conportlab-client-preview/ContactUs/">문의</a>
+      <div class="mobile-language-links" aria-label="언어 선택">
+        <a href="/conportlab-client-preview/">KO</a><span>l</span><a href="http://en.conportlab.com/">EN</a><span>l</span><a href="http://en.conportlab.com/">JP</a>
+      </div>
+    </nav>
+    <main>
+      <section class="blog-hero">
+        <div class="blog-hero-inner">
+          <p class="eyebrow">AI 품질 관리</p>
+          <p class="blog-hero-title">AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준</p>
+          <p>AI 품질 관리는 이미지 검사만의 문제가 아닙니다. 불량이 발생한 설비 조건, 작업 조건, 자재 상태, 검사 결과가 같은 기준으로 연결되어야 합니다.</p>
+        </div>
+      </section>
+      <div class="article-shell">
+        <nav class="breadcrumb" aria-label="이동 경로"><a href="../index.html">홈</a><span>/</span><a href="index.html">블로그</a><span>/</span><span>AI 품질 관리</span></nav>
+        <article>
+          <h1>AI 품질 관리를 시작하기 전 확인해야 할 데이터와 운영 기준</h1>
+          <p class="article-meta">컨포트랩 · 2026년 5월 23일</p>
+          <p class="article-lead">AI 품질 관리를 제대로 시작하려면 먼저 불량을 설명할 수 있는 데이터 구조가 필요합니다. 검사 결과만 저장해서는 원인 분석과 재발 방지까지 이어지기 어렵습니다.</p>
+          <h2>품질 데이터는 결과와 조건을 함께 봐야 합니다</h2>
+          <p>불량률은 결과 지표입니다. 개선을 하려면 결과가 만들어진 순간의 설비 상태, 온습도, 작업자 입력, 자재 로트, 공정 조건이 같이 남아 있어야 합니다. 검사 결과만 쌓이면 “불량이 늘었다”는 사실은 알 수 있지만 “왜 늘었는지”를 설명하기 어렵습니다.</p>
+          <p>AI 품질 관리의 출발점은 모델이 아니라 데이터 연결입니다. 불량 유형, 검사 위치, 설비 알람, 작업 조건, 원재료 로트가 같은 제품과 같은 시간 축으로 묶여야 AI가 반복되는 패턴을 찾을 수 있습니다.</p>
+          <h2>운영 기준을 먼저 정해야 합니다</h2>
+          <ul>
+            <li>어떤 불량 유형을 먼저 줄일지 정합니다.</li>
+            <li>불량 발생 전후 몇 분의 설비 신호를 볼지 정합니다.</li>
+            <li>품질 판단을 누가 확인하고 어떤 조치로 남길지 정합니다.</li>
+            <li>AI가 제안한 원인 후보를 어떤 기준으로 검증할지 정합니다.</li>
+          </ul>
+          <h2>AI가 필요한 순간</h2>
+          <p>데이터가 연결되면 AI는 반복되는 이상 패턴, 놓치기 쉬운 조건 조합, 설비 상태와 품질 결과의 상관관계를 찾는 데 쓰일 수 있습니다. 특히 불량 원인이 사람의 경험에만 남아 있거나, 품질 이상 분석에 며칠씩 걸리는 공장에서는 데이터 연결만으로도 운영 속도가 달라집니다.</p>
+          <p>예를 들어 품질 이상이 발생했을 때 AI는 특정 설비의 알람 이력, 작업 조건, 검사 결과의 변화를 함께 비교해 원인 후보를 좁힙니다. 관리자는 수십 개 화면을 뒤지는 대신 확인해야 할 순서를 먼저 볼 수 있습니다.</p>
+          <h2>품질 관리를 위한 데이터 체크리스트</h2>
+          <ul>
+            <li>검사 결과가 제품, 공정, 설비와 연결되어 있는가?</li>
+            <li>불량 유형과 조치 결과가 표준화되어 기록되는가?</li>
+            <li>설비 알람과 작업 조건을 품질 이력과 함께 볼 수 있는가?</li>
+            <li>품질 회의용 보고서가 운영 데이터에서 바로 만들어질 수 있는가?</li>
+          </ul>
+          <h2>관련 적용 사례</h2>
+          <p>품질 이상 원인 분석에 2~3일이 걸리던 현장에서는 검사 결과와 설비관리 데이터를 연결하는 것만으로도 반복 분석 시간을 줄일 수 있습니다.</p>
+          <p><a class="text-link" href="../cases/consumer-goods-quality.html">AI 품질 관리 사례 보기</a></p>
+          <div class="article-cta">
+            <strong>품질 데이터 연결과 AI 분석을 함께 설계하세요.</strong>
+            <p>컨포트랩은 수기 품질 기록을 데이터 기반 관리와 AI 분석 기반 판단으로 전환합니다.</p>
+            <a class="button" href="/conportlab-client-preview/ContactUs/">도입 문의</a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="section-inner footer-layout">
+        <strong>컨포트랩</strong>
+        <div class="footer-contact">
+          <p>서울특별시 송파구 송파대로 167, B동 817호 (문정동, 문정역테라타워)</p>
+          <p>T 070-8287-1613 F 02-2007-0399 E admin@conportlab.com</p>
+          <p>©2026. CONPORTLAB All Rights Reserved.</p>
+        </div>
+        <div class="footer-legal" aria-label="정책 링크">
+          <span>이용약관</span><span aria-hidden="true">|</span><span>개인정보처리방침</span>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js?v=20260530-interaction-qa"></script>
+  </body>
+</html>

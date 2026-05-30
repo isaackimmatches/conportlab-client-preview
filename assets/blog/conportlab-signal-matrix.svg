@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI 품질관리 데이터 신호 매트릭스</title>
+  <desc id="desc">품질관리와 예지보전에 필요한 데이터 신호를 목적, 입력, 판단, 조치로 구분한 표</desc>
+  <rect width="1200" height="675" fill="#071013"/>
+  <text x="72" y="88" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">AI 품질관리 데이터 신호 매트릭스</text>
+  <text x="72" y="130" fill="#b7c3c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">불량률과 설비 정지를 함께 보려면 신호를 업무 목적별로 재배치해야 합니다.</text>
+  <g transform="translate(72 190)" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif">
+    <rect width="1056" height="390" rx="8" fill="#0f191c" stroke="#2c454b"/>
+    <g fill="#a7dc37" font-size="17" font-weight="900">
+      <text x="36" y="56">목적</text>
+      <text x="288" y="56">필수 입력</text>
+      <text x="566" y="56">AI 판단</text>
+      <text x="824" y="56">현장 조치</text>
+    </g>
+    <g stroke="#2c454b" stroke-width="1">
+      <path d="M0 86H1056M0 184H1056M0 282H1056"/>
+      <path d="M240 0V390M520 0V390M780 0V390"/>
+    </g>
+    <g fill="#fff" font-size="24" font-weight="900">
+      <text x="36" y="140">품질 불량 감소</text>
+      <text x="36" y="238">설비 정지 예방</text>
+      <text x="36" y="336">에너지 낭비 감축</text>
+    </g>
+    <g fill="#c8d3d8" font-size="19" font-weight="700">
+      <text x="288" y="126">검사 결과, 로트, 작업조건</text>
+      <text x="288" y="156">온습도, 설비 알람</text>
+      <text x="288" y="224">전류, 진동, 온도, 정비이력</text>
+      <text x="288" y="254">정지 로그, 가동 패턴</text>
+      <text x="288" y="322">전력 사용량, 생산 실적</text>
+      <text x="288" y="352">라인별 목표, 피크 시간</text>
+      <text x="566" y="126">반복 불량 원인 후보</text>
+      <text x="566" y="156">이상 조건 조합 탐색</text>
+      <text x="566" y="224">고장 전조 패턴</text>
+      <text x="566" y="254">정비 우선순위</text>
+      <text x="566" y="322">낭비 구간과 설비명</text>
+      <text x="566" y="352">생산 조건별 원가 영향</text>
+      <text x="824" y="126">작업조건 수정</text>
+      <text x="824" y="156">공정 기준 재점검</text>
+      <text x="824" y="224">점검 예약</text>
+      <text x="824" y="254">예비품 확보</text>
+      <text x="824" y="322">피크 회피 운전</text>
+      <text x="824" y="352">라인별 목표 조정</text>
+    </g>
+  </g>
+</svg>

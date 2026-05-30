@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 제조 운영 계층 구조</title>
+  <desc id="desc">ERP, MES, SCADA 위에 컨포트랩 제조 데이터 플랫폼과 제조 AI 운영 계층이 연결되는 구조</desc>
+  <rect width="1200" height="675" fill="#071013"/>
+  <text x="72" y="88" fill="#fff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">교체가 아니라 연결하는 제조 운영 계층</text>
+  <text x="72" y="130" fill="#b7c3c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">기존 ERP, MES, SCADA를 유지하면서 현장 질문에 답하는 데이터 계층을 더합니다.</text>
+  <g transform="translate(118 176)" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif">
+    <rect width="964" height="74" rx="8" fill="#1a2529" stroke="#38535a"/>
+    <text x="36" y="48" fill="#c8d3d8" font-size="27" font-weight="900">ERP · 원가 · 주문 · 재고</text>
+    <rect y="96" width="964" height="74" rx="8" fill="#1a2529" stroke="#38535a"/>
+    <text x="36" y="144" fill="#c8d3d8" font-size="27" font-weight="900">MES · 작업지시 · 실적 · 공정 이력</text>
+    <rect y="192" width="964" height="74" rx="8" fill="#1a2529" stroke="#38535a"/>
+    <text x="36" y="240" fill="#c8d3d8" font-size="27" font-weight="900">SCADA · 설비 상태 · 알람 · 센서 신호</text>
+    <rect y="288" width="964" height="108" rx="8" fill="#0b3a44" stroke="#00a7d8" stroke-width="2"/>
+    <text x="36" y="334" fill="#00d1ff" font-size="22" font-weight="900">컨포트랩 제조 데이터 플랫폼</text>
+    <text x="36" y="374" fill="#fff" font-size="30" font-weight="900">설비, 품질, 생산, 에너지를 운영 질문 단위로 연결</text>
+  </g>
+  <g transform="translate(118 596)" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif">
+    <rect width="964" height="58" rx="8" fill="#a7dc37"/>
+    <text x="36" y="38" fill="#071013" font-size="23" font-weight="900">제조 AI 에이전트: 원인 후보 · 정지 위험 · 낭비 구간 · 보고 자동화</text>
+  </g>
+</svg>

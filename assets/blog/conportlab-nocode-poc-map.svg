@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 노코드 스마트공장 PoC 맵</title>
+  <desc id="desc">스마트공장 구축 기간을 줄이기 위한 4단계 PoC 로드맵</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fafb"/>
+      <stop offset="1" stop-color="#e7eef1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#071013" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="72" y="88" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="36" font-weight="900">30일 PoC로 줄이는 스마트공장 구축 리스크</text>
+  <text x="72" y="132" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">작게 연결하고, 빠르게 화면화하고, 바로 운영 지표를 확인합니다.</text>
+  <g filter="url(#shadow)">
+    <g transform="translate(72 210)">
+      <rect width="242" height="278" rx="10" fill="#ffffff" stroke="#d6e0e4"/>
+      <text x="28" y="50" fill="#00a7d8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">WEEK 1</text>
+      <text x="28" y="98" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="30" font-weight="900">질문 정의</text>
+      <text x="28" y="146" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">불량, 정지, 에너지</text>
+      <text x="28" y="176" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">질문 3개 선정</text>
+    </g>
+    <g transform="translate(344 210)">
+      <rect width="242" height="278" rx="10" fill="#ffffff" stroke="#d6e0e4"/>
+      <text x="28" y="50" fill="#00a7d8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">WEEK 2</text>
+      <text x="28" y="98" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="30" font-weight="900">데이터 연결</text>
+      <text x="28" y="146" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">설비 태그, 기준정보,</text>
+      <text x="28" y="176" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">작업 기록 매핑</text>
+    </g>
+    <g transform="translate(616 210)">
+      <rect width="242" height="278" rx="10" fill="#ffffff" stroke="#d6e0e4"/>
+      <text x="28" y="50" fill="#00a7d8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">WEEK 3</text>
+      <text x="28" y="98" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="30" font-weight="900">화면 운영</text>
+      <text x="28" y="146" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">현장 입력폼과</text>
+      <text x="28" y="176" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">대시보드 구성</text>
+    </g>
+    <g transform="translate(888 210)">
+      <rect width="242" height="278" rx="10" fill="#111416"/>
+      <text x="28" y="50" fill="#a7dc37" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="900">WEEK 4</text>
+      <text x="28" y="98" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="30" font-weight="900">성과 검증</text>
+      <text x="28" y="146" fill="#c5d1d5" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">보고 시간, 정지 건수,</text>
+      <text x="28" y="176" fill="#c5d1d5" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">불량 원인 확인</text>
+    </g>
+  </g>
+  <path d="M316 348H340M588 348H612M860 348H884" stroke="#a7dc37" stroke-width="5" stroke-linecap="round"/>
+  <rect x="72" y="550" width="1056" height="72" rx="8" fill="#ffffff" stroke="#d6e0e4"/>
+  <text x="104" y="594" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="21" font-weight="900">의사결정권자에게 필요한 결과: 구축 범위, 필요한 데이터, 예상 효과, 다음 투자 여부가 한 달 안에 보이는 구조</text>
+</svg>

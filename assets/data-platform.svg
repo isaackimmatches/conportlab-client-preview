@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial data platform diagram</title>
+  <desc id="desc">Equipment data, quality records, and AI models converge into an operations dashboard.</desc>
+  <rect width="1200" height="760" fill="#101315"/>
+  <g fill="none" stroke="#29424b" stroke-width="2">
+    <path d="M0 124h1200M0 248h1200M0 372h1200M0 496h1200M0 620h1200"/>
+    <path d="M160 0v760M320 0v760M480 0v760M640 0v760M800 0v760M960 0v760"/>
+  </g>
+  <g fill="#f7f9f8">
+    <rect x="92" y="120" width="220" height="120" rx="10"/>
+    <rect x="92" y="320" width="220" height="120" rx="10"/>
+    <rect x="92" y="520" width="220" height="120" rx="10"/>
+    <rect x="480" y="242" width="260" height="190" rx="16"/>
+    <rect x="874" y="170" width="230" height="420" rx="18"/>
+  </g>
+  <g fill="#111416" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+    <text x="130" y="188">Equipment</text>
+    <text x="128" y="388">Quality</text>
+    <text x="130" y="588">Energy</text>
+    <text x="540" y="328">AI Model</text>
+    <text x="920" y="250">Operations</text>
+  </g>
+  <g fill="none" stroke="#00a7d8" stroke-width="9" stroke-linecap="round">
+    <path d="M312 180 C392 180 392 302 480 302"/>
+    <path d="M312 380 C394 380 394 338 480 338"/>
+    <path d="M312 580 C394 580 394 374 480 374"/>
+    <path d="M740 338 C810 338 810 380 874 380"/>
+  </g>
+  <g fill="#a7c943">
+    <circle cx="480" cy="302" r="14"/>
+    <circle cx="480" cy="338" r="14"/>
+    <circle cx="480" cy="374" r="14"/>
+    <circle cx="874" cy="380" r="14"/>
+  </g>
+  <g stroke="#00a7d8" stroke-width="7" stroke-linecap="round">
+    <path d="M928 322h124M928 380h92M928 438h142"/>
+  </g>
+  <rect x="928" y="500" width="128" height="32" rx="16" fill="#a7c943"/>
+</svg>
+

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">컨포트랩 노코드 제조 데이터 빌더</title>
+  <desc id="desc">설비 데이터, 기준정보, 운영 화면, 알림 규칙을 노코드 방식으로 구성하는 제조 데이터 플랫폼 다이어그램</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061114"/>
+      <stop offset="0.58" stop-color="#102329"/>
+      <stop offset="1" stop-color="#15191c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#00a7d8"/>
+      <stop offset="1" stop-color="#a7dc37"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g stroke="#1e5360" stroke-width="1" opacity=".42">
+    <path d="M80 0V675M220 0V675M360 0V675M500 0V675M640 0V675M780 0V675M920 0V675M1060 0V675"/>
+    <path d="M0 105H1200M0 235H1200M0 365H1200M0 495H1200M0 625H1200"/>
+  </g>
+  <text x="72" y="88" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="35" font-weight="900">노코드 제조 데이터 플랫폼</text>
+  <text x="72" y="132" fill="#b8c4c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">개발 범위보다 운영 규칙을 먼저 정리해 구축 시간을 줄입니다.</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="200" width="318" height="310" rx="10" fill="#ffffff"/>
+    <text x="108" y="252" fill="#0089a6" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="900">DATA SOURCES</text>
+    <text x="108" y="300" fill="#111416" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="34" font-weight="900">현장 데이터</text>
+    <g fill="#f1f5f6" stroke="#d5e0e4">
+      <rect x="108" y="338" width="246" height="42" rx="6"/>
+      <rect x="108" y="394" width="246" height="42" rx="6"/>
+      <rect x="108" y="450" width="246" height="42" rx="6"/>
+    </g>
+    <text x="128" y="366" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">PLC · 센서 · 검사 장비</text>
+    <text x="128" y="422" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">MES · ERP · 수기 기록</text>
+    <text x="128" y="478" fill="#53616a" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="18" font-weight="800">에너지 · 정비 이력</text>
+    <rect x="448" y="166" width="304" height="378" rx="10" fill="#101416" stroke="#2b454b"/>
+    <text x="492" y="226" fill="#a7dc37" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">NO-CODE BUILDER</text>
+    <text x="492" y="282" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="37" font-weight="900">운영 화면 구성</text>
+    <text x="492" y="326" fill="#b8c4c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">태그 매핑, 계산식, 입력폼,</text>
+    <text x="492" y="356" fill="#b8c4c8" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="700">알림 규칙을 설정합니다.</text>
+    <rect x="492" y="404" width="216" height="74" rx="8" fill="#17343b"/>
+    <text x="518" y="450" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">현장별 앱 생성</text>
+    <rect x="810" y="200" width="318" height="310" rx="10" fill="#a7dc37"/>
+    <text x="846" y="252" fill="#071013" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="19" font-weight="900">OPERATIONS</text>
+    <text x="846" y="300" fill="#071013" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="34" font-weight="900">운영 지표</text>
+    <text x="846" y="356" fill="#1d2c13" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">품질 이상</text>
+    <text x="846" y="398" fill="#1d2c13" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">설비 정지</text>
+    <text x="846" y="440" fill="#1d2c13" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="900">에너지 낭비</text>
+  </g>
+  <path d="M394 355H444M756 355H806" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="419" cy="355" r="10" fill="#00a7d8"/>
+  <circle cx="781" cy="355" r="10" fill="#a7dc37"/>
+  <text x="72" y="596" fill="#d8e6ea" font-family="Pretendard, Apple SD Gothic Neo, Arial, sans-serif" font-size="20" font-weight="800">핵심: 화면을 빨리 만드는 것이 아니라 데이터 연결과 운영 규칙을 빠르게 검증하는 것입니다.</text>
+</svg>
