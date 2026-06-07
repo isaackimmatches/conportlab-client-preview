@@ -1312,6 +1312,42 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   box-shadow: 0 18px 50px rgba(17, 20, 22, 0.08);
 }
 
+.case-card,
+.seo-blog-grid article,
+.reference-customer-strip article {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-overlay-link {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  width: auto;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.card-overlay-link:focus-visible {
+  outline: 3px solid rgba(0, 167, 216, 0.62);
+  outline-offset: -4px;
+  border-radius: 8px;
+}
+
+.case-card .card-overlay-link,
+.seo-blog-grid .card-overlay-link,
+.reference-customer-strip .card-overlay-link {
+  width: auto;
+  align-self: stretch;
+  color: transparent;
+  font-weight: inherit;
+  border-bottom: 0;
+}
+
 .case-card img,
 .news-card img {
   background: var(--premium-panel);
