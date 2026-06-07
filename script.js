@@ -17,16 +17,35 @@ const productSteps = productShowcase?.querySelectorAll("[data-product-step]") ||
 const leadGateLinks = document.querySelectorAll("a[href$='conportlab-company-profile.pdf']");
 const navDetails = document.querySelectorAll(".desktop-nav details");
 const desktopNav = document.querySelector(".desktop-nav");
+const industrialHero = document.querySelector("[data-industrial-hero]");
 // senb.kr 연결 시 script.js 로드 전에 window.CONPORTLAB_LEAD_ENDPOINT를 지정하면 큐가 자동 전송됩니다.
 const leadEndpoint = window.CONPORTLAB_LEAD_ENDPOINT || "";
 const leadStorageKey = "conportlabLeadQueue";
+const siteBasePath = document.querySelector("link[href^='/conportlab-client-preview/']")
+  ? "/conportlab-client-preview"
+  : "";
+
+if (industrialHero) {
+  industrialHero.addEventListener("pointermove", (event) => {
+    const rect = industrialHero.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+    industrialHero.style.setProperty("--hero-glow-x", `${x.toFixed(1)}%`);
+    industrialHero.style.setProperty("--hero-glow-y", `${y.toFixed(1)}%`);
+  });
+
+  industrialHero.addEventListener("pointerleave", () => {
+    industrialHero.style.setProperty("--hero-glow-x", "74%");
+    industrialHero.style.setProperty("--hero-glow-y", "42%");
+  });
+}
 
 if (!document.querySelector(".floating-actions")) {
   const quickActions = document.createElement("div");
   quickActions.className = "floating-actions";
   quickActions.setAttribute("aria-label", "빠른 문의");
   quickActions.innerHTML =
-    `<a href="/conportlab-client-preview/index.html#contact" aria-label="문의 섹션으로 이동">문의</a>`;
+    `<a href="${siteBasePath}/index.html#contact" aria-label="문의 섹션으로 이동">문의</a>`;
   document.body.appendChild(quickActions);
 }
 
