@@ -3949,7 +3949,7 @@ a.usecase-source-card:focus-visible img {
 
 .footer-layout {
   display: grid;
-  grid-template-columns: auto minmax(280px, 1fr) auto;
+  grid-template-columns: auto minmax(280px, 1fr) minmax(240px, 0.46fr) auto;
   align-items: center;
   gap: 20px 34px;
 }
@@ -3987,6 +3987,26 @@ a.usecase-source-card:focus-visible img {
   color: rgba(255, 255, 255, 0.82);
   font-size: 13px;
   font-weight: 900;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  justify-content: flex-end;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.footer-links a {
+  border-bottom: 1px solid transparent;
+}
+
+.footer-links a:hover {
+  color: var(--white);
+  border-bottom-color: currentColor;
 }
 
 .floating-actions {
@@ -6433,44 +6453,45 @@ body.history-page .official-copy-section {
 
 .customer-logo-band {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr);
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 28px;
-  padding: 18px 20px;
+  padding: 20px;
+  overflow: hidden;
   background: #0d1214;
   border-radius: 8px;
 }
 
-.customer-logo-band > span {
+.customer-logo-band-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.customer-logo-band-copy span {
   color: var(--cyan);
   font-size: 13px;
   font-weight: 950;
   text-transform: uppercase;
 }
 
-.customer-logo-band ul {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.customer-logo-band-copy strong {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(18px, 1.45vw, 22px);
+  line-height: 1.25;
+  word-break: keep-all;
 }
 
-.customer-logo-band li {
-  display: grid;
-  place-items: center;
-  min-height: 54px;
-  padding: 8px;
-  color: rgba(255, 255, 255, 0.78);
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.customer-logo-band img {
+  width: 100%;
+  aspect-ratio: 764 / 112;
+  height: clamp(64px, 8vw, 112px);
+  min-height: 64px;
+  object-fit: contain;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  font-size: 13px;
-  font-weight: 900;
-  text-align: center;
-  word-break: keep-all;
 }
 
 .reference-customer-strip {
@@ -6598,6 +6619,97 @@ body.history-page .official-copy-section {
 
 .event-news-line span {
   max-width: 760px;
+}
+
+.event-media-feature {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.7fr) minmax(280px, 0.5fr);
+  align-items: stretch;
+  gap: 12px;
+}
+
+.event-media-copy,
+.event-media-frame {
+  min-height: 230px;
+  padding: 26px;
+  border-radius: 8px;
+}
+
+.event-media-copy {
+  display: grid;
+  align-content: center;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.event-media-copy span,
+.event-media-frame span {
+  color: var(--lime);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.event-media-copy strong {
+  display: block;
+  margin-top: 12px;
+  max-width: 640px;
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.18;
+  word-break: keep-all;
+}
+
+.event-media-copy p {
+  max-width: 640px;
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 760;
+  line-height: 1.62;
+  word-break: keep-all;
+}
+
+.event-media-frame {
+  position: relative;
+  display: grid;
+  align-content: end;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(0deg, rgba(5, 6, 7, 0.82), rgba(5, 6, 7, 0.18) 62%),
+    url("assets/imweb/official-media/780eec9701a18.jpg") center / cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.event-media-frame::before {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 48px;
+  height: 48px;
+  background:
+    linear-gradient(90deg, transparent 0 35%, var(--white) 35% 48%, transparent 48%),
+    linear-gradient(150deg, transparent 0 48%, var(--white) 48% 61%, transparent 61%);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  opacity: 0.88;
+  content: "";
+}
+
+.event-media-frame strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(32px, 3.2vw, 46px);
+  line-height: 1;
+}
+
+.event-media-frame p {
+  position: relative;
+  z-index: 1;
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 850;
 }
 
 .event-preview-grid {

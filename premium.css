@@ -4069,6 +4069,10 @@ body.solution-page .solution-story [data-reveal] {
   padding-bottom: 34px;
 }
 
+.customer-logo-band {
+  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr);
+}
+
 .reference-customer-strip article {
   grid-template-rows: none;
   min-height: 300px;
@@ -4081,6 +4085,16 @@ body.solution-page .solution-story [data-reveal] {
 
 .seo-blog-grid article {
   min-height: 278px;
+}
+
+.event-media-feature {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.7fr) minmax(280px, 0.5fr);
+  gap: 12px;
+}
+
+.footer-layout {
+  grid-template-columns: auto minmax(280px, 1fr) minmax(240px, 0.46fr) auto;
 }
 
 @media (max-width: 1120px) {
@@ -4156,5 +4170,15 @@ body.solution-page .solution-story [data-reveal] {
 
   .os-dashboard {
     display: none;
+  }
+
+  .customer-logo-band,
+  .event-media-feature,
+  .footer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
