@@ -177,7 +177,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   --hero-title-y: 0px;
   --hero-title-scale: 1;
   --hero-title-blur: 0px;
-  --hero-video-scale: 1.04;
+  --hero-video-scale: 1.025;
   background: #050708;
 }
 
@@ -209,7 +209,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 .hero-video-layer {
   z-index: 0;
   background:
-    linear-gradient(135deg, rgba(7, 12, 13, 0.94), rgba(15, 24, 26, 0.76)),
+    linear-gradient(135deg, rgba(7, 12, 13, 0.62), rgba(15, 24, 26, 0.4)),
     url("assets/video/ale-coq-production-line-poster.jpg") center / cover;
 }
 
@@ -217,7 +217,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.8) contrast(1.16) brightness(0.68);
+  filter: saturate(0.94) contrast(1.08) brightness(0.88);
   transform: scale(var(--hero-video-scale));
   transition: transform 120ms linear;
 }
@@ -225,10 +225,10 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 .hero-scrim {
   z-index: 1;
   background:
-    radial-gradient(circle at var(--hero-glow-x) var(--hero-glow-y), rgba(0, 167, 216, 0.24), transparent 28%),
-    radial-gradient(circle at 84% 78%, rgba(167, 201, 67, 0.14), transparent 26%),
-    linear-gradient(90deg, rgba(3, 7, 8, 0.95) 0%, rgba(3, 7, 8, 0.8) 42%, rgba(3, 7, 8, 0.36) 100%),
-    linear-gradient(180deg, rgba(3, 7, 8, 0.72) 0%, rgba(3, 7, 8, 0.2) 42%, rgba(3, 7, 8, 0.92) 100%);
+    radial-gradient(circle at var(--hero-glow-x) var(--hero-glow-y), rgba(0, 167, 216, 0.18), transparent 28%),
+    radial-gradient(circle at 84% 78%, rgba(167, 201, 67, 0.1), transparent 26%),
+    linear-gradient(90deg, rgba(3, 7, 8, 0.68) 0%, rgba(3, 7, 8, 0.48) 42%, rgba(3, 7, 8, 0.14) 100%),
+    linear-gradient(180deg, rgba(3, 7, 8, 0.42) 0%, rgba(3, 7, 8, 0.08) 42%, rgba(3, 7, 8, 0.64) 100%);
 }
 
 .hero-grid {

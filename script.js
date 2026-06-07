@@ -59,13 +59,12 @@ if (industrialHero) {
     const viewportHeight = Math.max(1, window.innerHeight);
     const scrollRange = Math.max(1, industrialHero.offsetHeight - viewportHeight);
     const progress = clampHeroProgress(-industrialHero.getBoundingClientRect().top / scrollRange);
-    const intro = smoothHeroProgress((progress - 0.06) / 0.24);
-    const outro = smoothHeroProgress((progress - 0.62) / 0.3);
-    const opacity = Math.max(0.08, intro) * (1 - outro);
-    const y = (1 - intro) * 34 - outro * 54;
-    const scale = 0.97 + intro * 0.03 - outro * 0.025;
-    const blur = (1 - intro) * 5 + outro * 8;
-    const videoScale = 1.04 + progress * 0.018;
+    const fade = smoothHeroProgress(progress / 0.62);
+    const opacity = 1 - fade;
+    const y = -fade * 72;
+    const scale = 1 - fade * 0.03;
+    const blur = fade * 7;
+    const videoScale = 1.025 + progress * 0.02;
 
     industrialHero.classList.add("is-scroll-animated");
     industrialHero.style.setProperty("--hero-title-opacity", opacity.toFixed(3));
