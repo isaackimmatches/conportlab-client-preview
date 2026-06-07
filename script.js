@@ -18,6 +18,7 @@ const leadGateLinks = document.querySelectorAll("a[href$='conportlab-company-pro
 const navDetails = document.querySelectorAll(".desktop-nav details");
 const desktopNav = document.querySelector(".desktop-nav");
 const industrialHero = document.querySelector("[data-industrial-hero]");
+const industrialHeroStage = industrialHero ? industrialHero.querySelector(".hero-scroll-stage") || industrialHero : null;
 // senb.kr 연결 시 script.js 로드 전에 window.CONPORTLAB_LEAD_ENDPOINT를 지정하면 큐가 자동 전송됩니다.
 const leadEndpoint = window.CONPORTLAB_LEAD_ENDPOINT || "";
 const leadStorageKey = "conportlabLeadQueue";
@@ -27,7 +28,7 @@ const siteBasePath = document.querySelector("link[href^='/conportlab-client-prev
 
 if (industrialHero) {
   industrialHero.addEventListener("pointermove", (event) => {
-    const rect = industrialHero.getBoundingClientRect();
+    const rect = industrialHeroStage.getBoundingClientRect();
     const x = ((event.clientX - rect.left) / rect.width) * 100;
     const y = ((event.clientY - rect.top) / rect.height) * 100;
     industrialHero.style.setProperty("--hero-glow-x", `${x.toFixed(1)}%`);
@@ -38,6 +39,55 @@ if (industrialHero) {
     industrialHero.style.setProperty("--hero-glow-x", "74%");
     industrialHero.style.setProperty("--hero-glow-y", "42%");
   });
+
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const heroScrollTitle = industrialHero.querySelector(".hero-copy-block");
+  let heroScrollFrame = null;
+
+  function clampHeroProgress(value) {
+    return Math.max(0, Math.min(1, value));
+  }
+
+  function smoothHeroProgress(value) {
+    const progress = clampHeroProgress(value);
+    return progress * progress * (3 - 2 * progress);
+  }
+
+  function updateHeroScrollTitle() {
+    if (!heroScrollTitle || reducedMotion.matches) return;
+
+    const viewportHeight = Math.max(1, window.innerHeight);
+    const scrollRange = Math.max(1, industrialHero.offsetHeight - viewportHeight);
+    const progress = clampHeroProgress(-industrialHero.getBoundingClientRect().top / scrollRange);
+    const intro = smoothHeroProgress((progress - 0.06) / 0.24);
+    const outro = smoothHeroProgress((progress - 0.62) / 0.3);
+    const opacity = Math.max(0.08, intro) * (1 - outro);
+    const y = (1 - intro) * 34 - outro * 54;
+    const scale = 0.97 + intro * 0.03 - outro * 0.025;
+    const blur = (1 - intro) * 5 + outro * 8;
+    const videoScale = 1.04 + progress * 0.018;
+
+    industrialHero.classList.add("is-scroll-animated");
+    industrialHero.style.setProperty("--hero-title-opacity", opacity.toFixed(3));
+    industrialHero.style.setProperty("--hero-title-y", `${y.toFixed(1)}px`);
+    industrialHero.style.setProperty("--hero-title-scale", scale.toFixed(3));
+    industrialHero.style.setProperty("--hero-title-blur", `${blur.toFixed(1)}px`);
+    industrialHero.style.setProperty("--hero-video-scale", videoScale.toFixed(3));
+  }
+
+  function scheduleHeroScrollTitle() {
+    if (heroScrollFrame !== null) return;
+    heroScrollFrame = requestAnimationFrame(() => {
+      heroScrollFrame = null;
+      updateHeroScrollTitle();
+    });
+  }
+
+  if (heroScrollTitle && !reducedMotion.matches) {
+    updateHeroScrollTitle();
+    window.addEventListener("scroll", scheduleHeroScrollTitle, { passive: true });
+    window.addEventListener("resize", scheduleHeroScrollTitle);
+  }
 }
 
 if (!document.querySelector(".floating-actions")) {

@@ -165,21 +165,36 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 
 .premium-hero {
   position: relative;
-  display: grid;
-  align-items: center;
-  min-height: 100svh;
+  display: block;
+  min-height: 182svh;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
   color: #ffffff;
   isolation: isolate;
   --hero-glow-x: 74%;
   --hero-glow-y: 42%;
+  --hero-title-opacity: 1;
+  --hero-title-y: 0px;
+  --hero-title-scale: 1;
+  --hero-title-blur: 0px;
+  --hero-video-scale: 1.04;
   background: #050708;
 }
 
 .premium-hero h1,
 .premium-hero .hero-copy {
   color: #ffffff;
+}
+
+.hero-scroll-stage {
+  position: sticky;
+  top: 0;
+  display: grid;
+  align-items: center;
+  height: 100svh;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .hero-video-layer,
@@ -192,7 +207,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 }
 
 .hero-video-layer {
-  z-index: -5;
+  z-index: 0;
   background:
     linear-gradient(135deg, rgba(7, 12, 13, 0.94), rgba(15, 24, 26, 0.76)),
     url("assets/video/ale-coq-production-line-poster.jpg") center / cover;
@@ -203,11 +218,12 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   height: 100%;
   object-fit: cover;
   filter: saturate(0.8) contrast(1.16) brightness(0.68);
-  transform: scale(1.04);
+  transform: scale(var(--hero-video-scale));
+  transition: transform 120ms linear;
 }
 
 .hero-scrim {
-  z-index: -4;
+  z-index: 1;
   background:
     radial-gradient(circle at var(--hero-glow-x) var(--hero-glow-y), rgba(0, 167, 216, 0.24), transparent 28%),
     radial-gradient(circle at 84% 78%, rgba(167, 201, 67, 0.14), transparent 26%),
@@ -216,7 +232,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 }
 
 .hero-grid {
-  z-index: -3;
+  z-index: 2;
   opacity: 0.32;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
@@ -228,7 +244,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 }
 
 .hero-data-layer {
-  z-index: -2;
+  z-index: 3;
   overflow: hidden;
   opacity: 0.64;
   pointer-events: none;
@@ -271,7 +287,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 }
 
 .hero-cursor-glow {
-  z-index: -1;
+  z-index: 4;
   background: radial-gradient(circle at var(--hero-glow-x) var(--hero-glow-y), rgba(0, 167, 216, 0.2), transparent 24%);
   opacity: 0.9;
   pointer-events: none;
@@ -290,32 +306,40 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 
 .hero-layout {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
   width: min(var(--max), calc(100% - 64px));
   margin: 0 auto;
-  padding: 120px 0 84px;
+  padding: 104px 0 84px;
   text-align: center;
 }
 
 .hero-copy-block {
   display: grid;
   justify-items: center;
-  max-width: 1180px;
+  max-width: 980px;
+  transform: translate3d(0, var(--hero-title-y), 0) scale(var(--hero-title-scale));
+  transform-origin: center;
+}
+
+.premium-hero.is-scroll-animated .hero-copy-block {
+  opacity: var(--hero-title-opacity);
+  filter: blur(var(--hero-title-blur));
+  will-change: opacity, transform, filter;
 }
 
 .hero h1 {
-  max-width: 1180px;
+  max-width: 980px;
   margin: 0;
   color: #ffffff;
-  font-size: clamp(44px, 7vw, 92px);
-  line-height: 1.02;
+  font-size: clamp(34px, 4.8vw, 64px);
+  line-height: 1.08;
   letter-spacing: 0;
   text-align: center;
-  text-shadow: 0 22px 58px rgba(0, 0, 0, 0.62), 0 0 30px rgba(0, 167, 216, 0.16);
   text-wrap: balance;
+  text-shadow: 0 22px 58px rgba(0, 0, 0, 0.62), 0 0 30px rgba(0, 167, 216, 0.16);
   word-break: keep-all;
 }
 
@@ -451,7 +475,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   position: absolute;
   left: 24px;
   bottom: 14px;
-  z-index: 2;
+  z-index: 6;
   max-width: calc(100% - 180px);
   margin: 0;
   color: rgba(255, 255, 255, 0.46);
@@ -1555,6 +1579,20 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+
+  .premium-hero {
+    min-height: 100svh;
+  }
+
+  .hero-scroll-stage {
+    position: relative;
+  }
+
+  .premium-hero.is-scroll-animated .hero-copy-block {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -1611,7 +1649,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   }
 
   .premium-hero {
-    min-height: 100svh;
+    min-height: 176svh;
     padding: 0;
   }
 
@@ -1703,7 +1741,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   }
 
   .premium-hero {
-    min-height: 100svh;
+    min-height: 172svh;
     padding: 0;
   }
 
@@ -1712,8 +1750,8 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   }
 
   .hero h1 {
-    font-size: clamp(34px, 10.4vw, 46px);
-    line-height: 1.16;
+    font-size: clamp(28px, 8.4vw, 36px);
+    line-height: 1.18;
   }
 
   .hero-copy {
