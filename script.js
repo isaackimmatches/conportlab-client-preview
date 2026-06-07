@@ -17,9 +17,43 @@ const productSteps = productShowcase?.querySelectorAll("[data-product-step]") ||
 const leadGateLinks = document.querySelectorAll("a[href$='conportlab-company-profile.pdf']");
 const navDetails = document.querySelectorAll(".desktop-nav details");
 const desktopNav = document.querySelector(".desktop-nav");
+const heroOsVisual = document.querySelector("[data-hero-os]");
+const installPercent = document.querySelector("[data-install-percent]");
 // senb.kr 연결 시 script.js 로드 전에 window.CONPORTLAB_LEAD_ENDPOINT를 지정하면 큐가 자동 전송됩니다.
 const leadEndpoint = window.CONPORTLAB_LEAD_ENDPOINT || "";
 const leadStorageKey = "conportlabLeadQueue";
+
+if (heroOsVisual) {
+  const setHeroProgress = () => {
+    const rect = heroOsVisual.getBoundingClientRect();
+    const viewport = window.innerHeight || 1;
+    const raw = 1 - Math.min(Math.max(rect.top / viewport, 0), 1);
+    const progress = Math.round(42 + raw * 52);
+    heroOsVisual.style.setProperty("--install-progress", String(progress));
+    if (installPercent) installPercent.textContent = `${progress}%`;
+  };
+
+  heroOsVisual.addEventListener("pointermove", (event) => {
+    const rect = heroOsVisual.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    heroOsVisual.style.setProperty("--tilt-y", `${(x * 7).toFixed(2)}deg`);
+    heroOsVisual.style.setProperty("--tilt-x", `${(-y * 6).toFixed(2)}deg`);
+    heroOsVisual.style.setProperty("--shift-x", `${(x * 8).toFixed(1)}px`);
+    heroOsVisual.style.setProperty("--shift-y", `${(y * 8).toFixed(1)}px`);
+  });
+
+  heroOsVisual.addEventListener("pointerleave", () => {
+    heroOsVisual.style.setProperty("--tilt-y", "0deg");
+    heroOsVisual.style.setProperty("--tilt-x", "0deg");
+    heroOsVisual.style.setProperty("--shift-x", "0px");
+    heroOsVisual.style.setProperty("--shift-y", "0px");
+  });
+
+  window.addEventListener("scroll", setHeroProgress, { passive: true });
+  window.addEventListener("resize", setHeroProgress);
+  setHeroProgress();
+}
 
 if (!document.querySelector(".floating-actions")) {
   const quickActions = document.createElement("div");

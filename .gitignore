@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Local dependencies/build output, if a framework is added later
+node_modules/
+dist/
+build/
+
+# Local visual QA screenshots
+qa/
