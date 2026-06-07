@@ -1385,8 +1385,8 @@ body.lead-modal-open {
 .detail-hero.usecase-hero {
   position: relative;
   align-items: center;
-  min-height: 763px;
-  padding: 110px 0 0;
+  min-height: 720px;
+  padding: 128px 0 88px;
   overflow: hidden;
   background: #050607;
 }
@@ -1400,14 +1400,14 @@ body.lead-modal-open {
 
 .detail-hero.usecase-hero::before {
   background: url("assets/imweb/official-usecase/usecase-hero.jpg") center 41% / cover;
-  filter: grayscale(1);
+  filter: grayscale(0.86) saturate(0.72);
   transform: scale(1.01);
 }
 
 .detail-hero.usecase-hero::after {
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.16) 48%, rgba(0, 0, 0, 0.62)),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.22));
+    linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.52) 48%, rgba(0, 0, 0, 0.72)),
+    linear-gradient(180deg, rgba(5, 6, 7, 0.34), rgba(5, 6, 7, 0.8));
 }
 
 .detail-hero.usecase-hero .section-inner {
@@ -1415,18 +1415,139 @@ body.lead-modal-open {
   z-index: 1;
 }
 
+.usecase-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.56fr);
+  align-items: center;
+  gap: 54px;
+}
+
+.usecase-hero-copy {
+  min-width: 0;
+}
+
 .detail-hero.usecase-hero h1 {
-  max-width: 1180px;
-  font-size: clamp(38px, 4vw, 58px);
+  max-width: 860px;
+  margin: 0;
+  font-size: 58px;
   line-height: 1.1;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .detail-hero.usecase-hero p:not(.eyebrow) {
-  max-width: 820px;
+  max-width: 660px;
   margin-top: 18px;
-  font-size: clamp(18px, 2vw, 29px);
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 22px;
   font-weight: 900;
-  line-height: 1.35;
+  line-height: 1.48;
+  word-break: keep-all;
+}
+
+.case-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 690px;
+  margin-top: 34px;
+}
+
+.case-proof-strip article {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.case-proof-strip strong {
+  display: block;
+  color: var(--white);
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.case-proof-strip span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.usecase-os-board {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    rgba(5, 18, 21, 0.88);
+  background-size: 42px 42px;
+  border: 1px solid rgba(0, 167, 216, 0.26);
+  border-radius: 8px;
+  box-shadow: 0 30px 92px rgba(0, 0, 0, 0.38);
+}
+
+.usecase-os-board::before {
+  position: absolute;
+  inset: 18px;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.usecase-os-board > span {
+  position: relative;
+  z-index: 1;
+  color: var(--cyan);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.usecase-os-board > strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 360px;
+  margin-top: 12px;
+  font-size: 30px;
+  line-height: 1.18;
+  word-break: keep-all;
+}
+
+.case-axis-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 34px 0 26px;
+}
+
+.case-axis-row em {
+  display: grid;
+  min-height: 78px;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 950;
+}
+
+.usecase-os-board p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 800;
+  line-height: 1.58;
+  word-break: keep-all;
 }
 
 .detail-hero.mission {
@@ -3279,54 +3400,128 @@ body.company-page .site-header {
 .usecase-source-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 66px 52px;
+  gap: 18px;
   border-top: 0;
 }
 
 .usecase-source-list > a,
 .usecase-source-list > span {
   display: block;
-  padding: 0;
-  color: #15191c;
+  min-width: 0;
+  padding: 12px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
   border-bottom: 0;
-  font-size: clamp(20px, 2vw, 28px);
   font-weight: 900;
   line-height: 1.32;
   word-break: keep-all;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
 }
 
 .usecase-list-section {
-  padding: 96px 0 116px;
-  background: var(--white);
+  padding: 108px 0 120px;
+  color: var(--white);
+  background: #050607;
+}
+
+.usecase-list-shell {
+  display: grid;
+  gap: 42px;
+}
+
+.usecase-page-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.58fr);
+  align-items: end;
+  gap: 42px;
+}
+
+.usecase-page-intro .eyebrow {
+  grid-column: 1;
+  margin: 0 0 14px;
+}
+
+.usecase-page-intro h2 {
+  grid-column: 1;
+  max-width: 780px;
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.12;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.usecase-page-intro p:not(.eyebrow) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 19px;
+  font-weight: 820;
+  line-height: 1.58;
+  word-break: keep-all;
 }
 
 .usecase-source-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  background: #edf1f2;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
   transition: filter 180ms ease, transform 180ms ease;
 }
 
-.usecase-source-card > span {
+.usecase-source-card > .usecase-card-body {
+  display: grid;
+  gap: 10px;
+  min-height: 174px;
+  margin-top: 0;
+  padding: 18px 4px 4px;
+}
+
+.usecase-source-card strong {
   display: block;
-  margin-top: 22px;
+  color: var(--white);
+  font-size: 23px;
+  line-height: 1.25;
+}
+
+.usecase-source-card em {
+  display: block;
+  align-self: end;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 840;
+  line-height: 1.42;
 }
 
 .usecase-notice {
   display: inline-block;
-  margin-right: 6px;
-  color: #00839a;
-  font-size: 0.56em;
+  width: max-content;
+  padding: 5px 8px;
+  color: var(--cyan);
+  background: rgba(0, 167, 216, 0.1);
+  border: 1px solid rgba(0, 167, 216, 0.2);
+  border-radius: 999px;
+  font-size: 12px;
   font-weight: 950;
   letter-spacing: 0;
-  vertical-align: 0.12em;
+}
+
+a.usecase-source-card:hover,
+a.usecase-source-card:focus-visible {
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(0, 167, 216, 0.4);
+  transform: translateY(-3px);
 }
 
 a.usecase-source-card:hover img,
 a.usecase-source-card:focus-visible img {
-  filter: brightness(0.9);
-  transform: translateY(-2px);
+  filter: brightness(1.08);
 }
 
 .detail-layout {
@@ -4872,6 +5067,8 @@ a.usecase-source-card:focus-visible img {
   .contact-layout,
   .contact-field-grid,
   .detail-layout,
+  .usecase-hero-layout,
+  .usecase-page-intro,
   .company-proof-grid,
   .newsletter-form {
     grid-template-columns: 1fr;
@@ -4889,6 +5086,14 @@ a.usecase-source-card:focus-visible img {
   .detail-card-grid.two,
   .recruit-team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .usecase-source-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .usecase-os-board {
+    max-width: 620px;
   }
 
   .solution-card {
@@ -5569,12 +5774,12 @@ a.usecase-source-card:focus-visible img {
 
   .detail-hero.usecase-hero {
     min-height: 560px;
-    padding-top: 88px;
+    padding: 98px 0 54px;
   }
 
   .detail-hero.usecase-hero h1 {
     max-width: min(100%, 360px);
-    font-size: clamp(34px, 10vw, 48px);
+    font-size: 42px;
   }
 
   .detail-hero.usecase-hero p:not(.eyebrow) {
@@ -5582,13 +5787,65 @@ a.usecase-source-card:focus-visible img {
     font-size: 18px;
   }
 
+  .case-proof-strip,
+  .case-axis-row {
+    grid-template-columns: 1fr;
+  }
+
+  .case-proof-strip {
+    max-width: 360px;
+  }
+
+  .case-proof-strip article {
+    padding: 16px;
+  }
+
+  .case-proof-strip strong {
+    font-size: 24px;
+  }
+
+  .usecase-os-board {
+    padding: 22px;
+  }
+
+  .usecase-os-board > strong {
+    font-size: 24px;
+  }
+
+  .case-axis-row em {
+    min-height: 58px;
+  }
+
   .usecase-list-section {
-    padding: 58px 0 74px;
+    padding: 64px 0 78px;
+  }
+
+  .usecase-page-intro h2 {
+    font-size: 34px;
+  }
+
+  .usecase-page-intro .eyebrow,
+  .usecase-page-intro h2,
+  .usecase-page-intro p:not(.eyebrow) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .usecase-page-intro p:not(.eyebrow) {
+    font-size: 17px;
   }
 
   .usecase-source-list {
     gap: 38px;
     margin-top: 0;
+  }
+
+  .usecase-source-card > .usecase-card-body {
+    min-height: auto;
+  }
+
+  .usecase-source-card strong {
+    font-size: 22px;
   }
 
   .product-sensor-list {
