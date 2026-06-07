@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://conportlab.com/</loc>
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -59,12 +59,6 @@
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://conportlab.com/events/</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://conportlab.com/blog/</loc>
