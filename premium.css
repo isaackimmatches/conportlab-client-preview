@@ -210,7 +210,7 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   z-index: 0;
   background:
     linear-gradient(135deg, rgba(7, 12, 13, 0.62), rgba(15, 24, 26, 0.4)),
-    url("assets/video/ale-coq-production-line-poster.jpg") center / cover;
+    url("assets/video/conportlab-hero-manufacturing-ax-25-33-poster.jpg") center / cover;
 }
 
 .hero-background-video {
@@ -469,22 +469,6 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
   font-weight: 950;
   text-align: right;
   word-break: keep-all;
-}
-
-.hero-video-credit {
-  position: absolute;
-  left: 24px;
-  bottom: 14px;
-  z-index: 6;
-  max-width: calc(100% - 180px);
-  margin: 0;
-  color: rgba(255, 255, 255, 0.46);
-  font-size: 11px;
-  line-height: 1.4;
-}
-
-.hero-video-credit a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .command-panel {
@@ -1801,13 +1785,6 @@ body.company-page .desktop-nav .nav-item:nth-child(1) > .nav-top-link {
 
   .hero-command-panel {
     display: none;
-  }
-
-  .hero-video-credit {
-    left: 16px;
-    bottom: 10px;
-    max-width: calc(100% - 32px);
-    font-size: 10px;
   }
 
   .command-panel {
